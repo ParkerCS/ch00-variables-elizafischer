@@ -3,10 +3,12 @@ import math
 print(5//2)
 print(13%3)
 print(8**0.5)
+print("")
 
 pi = math.pi
 print(pi)
 print(math.cos(0.5))
+print("")
 
 
 print(round(5.67,1))
@@ -15,6 +17,7 @@ print(round(5.67,1))
 print(4,3,5,6, "Score:" + str(300))
 print("hello", end= " ")
 print("world")
+print("")
 
 
 
@@ -23,6 +26,7 @@ print("world")
 #print(int(my_input) + 3)
 
 print("hello".upper())
+print("")
 
 
 # str, int and float
@@ -31,9 +35,11 @@ y = int(y)
 y = float(y)
 y = str(y)
 print("$" + y)
+print("")
 
 # escape codes
 print("escape\" me\\ \n next \t line")
+print("")
 # Concatenation
 
 
@@ -41,16 +47,16 @@ print("escape\" me\\ \n next \t line")
 # While loops
 done = False
 while not done:
-    print("hello")
-    done = False
-print("end loop")
+    pass
+    #print("hello")
+    #done = False
+#print("end loop")
 
 
 x = 0
 while x < 100:
     print(x)
     x += 5
-
 
 
 # For loops and ranges
@@ -69,7 +75,7 @@ for i in range(1,101):
 print(total)
 
 # Nested loops
-for i in range(10)
+for i in range(10):
     for j in range(10):
         for k in range(10):
             for l in range(10):

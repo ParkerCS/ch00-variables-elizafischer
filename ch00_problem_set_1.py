@@ -2,6 +2,7 @@ import math
 #SECTION 1 - MATH OPERATORS AND VARIABLES (20PTS TOTAL)
 
 #PROBLEM 1 (From Math Class to Code - 2pts)
+print("Problem #1")
 
 # Print the answer to the math question:
 # 3(60x^2 + 3x/9) + 2x - 4/3(x) - sqrt(x)
@@ -13,6 +14,7 @@ print("")
 
 
 #PROBLEM 2 (Set your alarm - 3pts)
+print("Problem #2")
 #You look at the clock and see that it is currently 1:00PM.
 # You set an alarm to go off 728 hours later.
 # At what time will the alarm go off? Write a program that prints the answer.
@@ -22,7 +24,9 @@ clock_time = str("1:00 PM" )
 print(clock_time)
 print("An alarm will go off 728 hours later than this time.")
 time = 728//12
+print(time)
 time = time//12
+print(time)
 clock += time
 print ("Alarm goes off at " + str(clock) +":00")
 
@@ -31,6 +35,7 @@ print ("Alarm goes off at " + str(clock) +":00")
 print("")
 
 #PROBLEM 3 (Wholesale Books - 3pts)
+print("Problem #3")
 #The cover price of a book is $27.95, but bookstores get a 50 percent discount.
 #Shipping costs $4 for the first copy and 75 cents for each additional copy.
 # Calculate the total wholesale costs for 68 copies to the nearest penny.
@@ -45,10 +50,11 @@ total= book + shipping + 4
 float(total)
 total = (round(total, 2))
 print("Total wholesale cost: $" + str(total))
-
-
 print("")
+
+
 #PROBLEM 4 (Dining Room Chairs - 3pts)
+print("Problem #4")
 # You purchase eight chairs for your dining room.
 # You pay for the chairs plus sales tax at 9.5%
 # Make a program that prints the amount to the nearest penny using the variables below
@@ -58,16 +64,28 @@ tax_percent = 0.095
 units = 8
 
 chair_price_plustax = (chair_price * tax_percent) + chair_price
-print(chair_price_plustax)
+print("A chair costs about $" + str(chair_price_plustax) + " with tax")
+float(chair_price_plustax)
+total_chair =  chair_price_plustax * 8
+float(total_chair)
+total_chair = round(total_chair, 2)
+print("8 chairs with tax costs $" + str(total_chair))
+print("")
+
 
 #PROBLEM 5 (Area of Circle - 3pts)
+print("Problem #5")
 # Write code that can compute the area of circle.
 # Create variables for radius and pi (3.14159)
 # The formula, in case you do not know, is radius times radius times pi.
 # Print the outcome of your program as follows:
 # The surface area of a circle with radius ... is ...
+print("Circle area calculator!")
+print()
+
 
 #PROBLEM 6 (Coin counter - 4pts) (modulo and floor operators, save results and add together)
+print("Problem #6")
 # Write code that classifies a given amount of money (which you store in a variable named count),
 # as greater monetary units. Your code lists the monetary equivalent in dollars, quarters,
 # dimes, nickels, and pennies.
@@ -79,6 +97,7 @@ print(chair_price_plustax)
 
 
 #PROBLEM 7 (Variable Swap - 2pts)
+print("Problem #7")
 # Can you think of a way to swap the values of two variables that does not
 # need a third variable as a temporary storage?
 # In the code below, try to implement the swapping of the values of 'a' and 'b' without using a third variable.
