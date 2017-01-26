@@ -101,7 +101,14 @@ print("Problem #6")
 # then the maximum number of dimes that fit in the remainder after you subtract the dollars and quarters,
 # and so on for nickels and pennies.
 # The result is that you express the amount as the minimum number of coins needed.
-
+count = 492.94
+dollar_number = 492
+quarter_number = 1,970
+dime_number = 4,929
+nickel_number = 9,858
+penny_number = 49,294
+print(str(dollar_number) + " dollars, " + str(quarter_number) +" quarters, " + str(dime_number) +" dimes, " + str(nickel_number) + " nickels and " + str(penny_number) + " pennies that can fit into $492.94.")
+#max_dollars =
 
 print("")
 #PROBLEM 7 (Variable Swap - 2pts)
@@ -111,7 +118,6 @@ print("Problem #7")
 # In the code below, try to implement the swapping of the values of 'a' and 'b' without using a third variable.
 # To help you out, the first step to do this is already given.
 # You just need to add two more lines of code.
-
 a = 17
 b = 23
 print( "a = "+ str(a), "and b = "+ str(b))
