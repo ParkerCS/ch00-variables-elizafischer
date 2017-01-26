@@ -13,6 +13,7 @@ print(your_answer)
 print("")
 
 
+
 #PROBLEM 2 (Set your alarm - 3pts)
 print("Problem #2")
 #You look at the clock and see that it is currently 1:00PM.
@@ -81,6 +82,12 @@ print("Problem #5")
 # Print the outcome of your program as follows:
 # The surface area of a circle with radius ... is ...
 print("Circle area calculator!")
+my_input = input("Write the radius of your choice:")
+pi = math.pi
+my_input = ((my_input **2) * pi)
+float(my_input)
+my_input = round(my_input , 2)
+print("The area of your circle is " + str(my_input))
 print()
 
 
@@ -96,6 +103,7 @@ print("Problem #6")
 # The result is that you express the amount as the minimum number of coins needed.
 
 
+print("")
 #PROBLEM 7 (Variable Swap - 2pts)
 print("Problem #7")
 # Can you think of a way to swap the values of two variables that does not
@@ -106,7 +114,10 @@ print("Problem #7")
 
 a = 17
 b = 23
-print( "a =", a, "and b =", b)
+print( "a = "+ str(a), "and b = "+ str(b))
 a += b # this is the first line to help you out
 # add two more lines of code here to cause swapping of a and b
-print( "a =", a, "and b =", b)
+a -= 17
+b += 17
+b -= 23
+print( "a = " + str(a), "and b = "+ str(b))
