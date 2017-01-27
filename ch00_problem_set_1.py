@@ -108,7 +108,13 @@ dime_number = 4,929
 nickel_number = 9,858
 penny_number = 49,294
 print(str(dollar_number) + " dollars, " + str(quarter_number) +" quarters, " + str(dime_number) +" dimes, " + str(nickel_number) + " nickels and " + str(penny_number) + " pennies that can fit into $492.94.")
-#max_dollars =
+
+dollar = round(count // 1)
+quarter = round((count - dollar) // 0.25)
+dime = round((count - dollar - (quarter / 4)) // 0.10)
+nickel = round((count - dollar - (quarter / 4) - (dime / 10)) //0.05)
+penny = round((count - dollar - (quarter/4) - (dime / 10) - (nickel/ 20)) // 0.01)
+print("There are " + str(dollar) + " dollars, "+ str(quarter) + " quarters, " + str(dime) + " dimes, " + str(nickel) + " nickels and " + str(penny) + " pennies.")
 
 print("")
 #PROBLEM 7 (Variable Swap - 2pts)
