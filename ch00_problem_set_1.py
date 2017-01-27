@@ -116,6 +116,7 @@ nickel = round((count - dollar - (quarter / 4) - (dime / 10)) //0.05)
 penny = round((count - dollar - (quarter/4) - (dime / 10) - (nickel/ 20)) // 0.01)
 print("There are " + str(dollar) + " dollars, "+ str(quarter) + " quarters, " + str(dime) + " dimes, " + str(nickel) + " nickels and " + str(penny) + " pennies.")
 
+
 print("")
 #PROBLEM 7 (Variable Swap - 2pts)
 print("Problem #7")
@@ -129,7 +130,6 @@ b = 23
 print( "a = "+ str(a), "and b = "+ str(b))
 a += b # this is the first line to help you out
 # add two more lines of code here to cause swapping of a and b
-a -= 17
-b += 17
-b -= 23
-print( "a = " + str(a), "and b = "+ str(b))
+b = a -b
+a -= b
+print( "a =", a, "and b =", b)
