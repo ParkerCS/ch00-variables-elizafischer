@@ -31,6 +31,7 @@ print(time)
 clock += time
 print ("Alarm goes off at " + str(clock) +":00")
 
+# Lee - Should go off at 9:00.  You took your origial time and did two floor operations which would always reduce it to 1 regardless of the time.  You could have taken the time after the first floor and added it to the current time (-1)
 
 
 print("")
@@ -84,12 +85,13 @@ print("Problem #5")
 print("Circle area calculator!")
 my_input = input("Write the radius of your choice:")
 pi = math.pi
-my_input = ((my_input **2) * pi)
+my_input = ((float(my_input) **2) * pi) # ERROR HERE CORRECTED
 float(my_input)
 my_input = round(my_input , 2)
 print("The area of your circle is " + str(my_input))
 print()
 
+# Lee - You need to change it to a number before doing any calculations (-1)
 
 #PROBLEM 6 (Coin counter - 4pts) (modulo and floor operators, save results and add together)
 print("Problem #6")
@@ -116,6 +118,8 @@ nickel = round((count - dollar - (quarter / 4) - (dime / 10)) //0.05)
 penny = round((count - dollar - (quarter/4) - (dime / 10) - (nickel/ 20)) // 0.01)
 print("There are " + str(dollar) + " dollars, "+ str(quarter) + " quarters, " + str(dime) + " dimes, " + str(nickel) + " nickels and " + str(penny) + " pennies.")
 
+# Lee - Looks like you did a lot of work to get this answer.  You did not need the first part, but nice work.
+
 
 print("")
 #PROBLEM 7 (Variable Swap - 2pts)
@@ -133,3 +137,4 @@ a += b # this is the first line to help you out
 b = a -b
 a -= b
 print( "a =", a, "and b =", b)
+
